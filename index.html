@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 OBJETOS HERENCIA</title>
+</head>
+
+<body>
+    <h1>José Alejandro Rodríguez Ramírez</h1>
+    <h2>50 OBJETOS CON HERENCIA</h2>
+    <hr>
+    <br>
+    <h3>Clase Persona</h3>
+    <br>
+    <p>public class Persona {<br /><br />String nombre;<br />int edad; <br />String sexo;<br /><br />public
+        Persona(String nombre, int edad, String
+        sexo){<br />this.nombre=nombre;<br />this.edad=edad;<br />this.sexo=sexo;<br /><br />}</p>
+    <p>public String getNombre() {<br />return nombre;<br />}</p>
+    <p>public int getEdad() {<br />return edad;<br />}</p>
+    <p>public String getSexo() {<br />return sexo;<br />}<br />}</p>
+    <br>
+    <hr>
+    <h3>Clase Trabajador</h3>
+    <br>
+    <p>public class Trabajador extends Persona{<br /><br />int matricula;<br />double sueldo;<br /><br />public
+        Trabajador(String nombre, int edad, String sexo, int matricula, double sueldo){<br />super(nombre,
+        edad,sexo);<br />this.matricula=matricula;<br />this.sueldo=sueldo;<br /><br />}<br /><br />public void
+        imprimirDatos(){<br />System.out.println("Nombre: "+ getNombre() +<br />"\nApellido: " +
+        getEdad()+<br />"\nSexo: "+ getSexo() +<br />"\nMatricula: "+ matricula +<br />"\nSueldo: "+ sueldo +
+        <br />"\n");<br />}<br /><br />}
+    </p>
+    <br>
+    <hr>
+    <br>
+    <h3>Ejecución</h3>
+    <br>
+    <p>public class Principal {<br />public static void main(String[] args) {<br />Trabajador tr1= new Trabajador("Jose
+        Pablo Ramirez Vidal", 27,"Hombre", 456974, 16987.9);<br />tr1.imprimirDatos();<br />Trabajador tr2= new
+        Trabajador("Maria Fernanda Vidal Perez", 26,"Mujer", 786345, 19876);<br />tr2.imprimirDatos();<br />Trabajador
+        tr3= new Trabajador("Porfirio Perez Mendez", 31,"Hombre", 897014,
+        23789.09);<br />tr3.imprimirDatos();<br />Trabajador tr4= new Trabajador("Luis Jesus Valdez Diaz", 29,"Hombre",
+        765234, 98765.23);<br />tr4.imprimirDatos();<br />Trabajador tr5= new Trabajador("Ana Azucena Urias Ramirez",
+        27,"Mujer", 763907, 34876.56);<br />tr5.imprimirDatos();<br />Trabajador tr6= new Trabajador("Raul Fernando
+        Dominguez", 26,"Hombre", 121453, 87654.23);<br />tr6.imprimirDatos();<br />Trabajador tr7= new
+        Trabajador("Damian Rodrigo",32 ,"Hombre",876098 , 34323 );<br />tr7.imprimirDatos();<br />Trabajador tr8= new
+        Trabajador("Claudia Andrea Rodriguez",25 ,"Mujer", 234123 , 26987.23
+        );<br />tr8.imprimirDatos();<br />Trabajador tr9= new Trabajador("Karen Odette S&aacute;nchez Cano",28, "Mujer",
+        876456 , 34987 );<br />tr9.imprimirDatos();<br />Trabajador tr10= new Trabajador("Andrea Reyes Ayala",29,
+        "Mujer", 564123 , 17886.23 );<br />tr10.imprimirDatos();<br />Trabajador tr11= new Trabajador("Diana Valeria
+        Pe&ntilde;a Acevedo",39, "Mujer", 987092 , 120304.96 );<br />tr11.imprimirDatos();<br />Trabajador tr12= new
+        Trabajador("Oscar Daniel Carranco Mandujado",27, "Hombre", 324534
+        ,234321.32);<br />tr12.imprimirDatos();<br />Trabajador tr13= new Trabajador("Denisse Carolina Estrada
+        Espinoza",30, "Mujer", 324123 , 87654.98);<br />tr13.imprimirDatos();<br />Trabajador tr14= new
+        Trabajador("Frida Galilea Gonz&aacute;lez S&aacute;nchez",34, "Mujer", 654098 ,
+        43987.32);<br />tr14.imprimirDatos();<br />Trabajador tr15= new Trabajador("Alondra Nayeli Rold&aacute;n
+        Arenas",41, "Mujer", 543998 , 21987.03);<br />tr15.imprimirDatos();<br />Trabajador tr16= new Trabajador("Ubaldo
+        Cornejo Peredo",32, "Hombre", 167543 , 25987.28);<br />tr16.imprimirDatos();<br />Trabajador tr17= new
+        Trabajador("Lizbeth Soledad Falc&oacute;n Gonz&aacute;lez",25, "Mujer", 546234 ,
+        19098.50);<br />tr17.imprimirDatos();<br />Trabajador tr18= new Trabajador("Naomi Sabido L&oacute;pez",28,
+        "Mujer", 8765234 , 23987.98);<br />tr18.imprimirDatos();<br />Trabajador tr19= new Trabajador("Iliana
+        Mart&iacute;nez de Alba",30, "Mujer", 198765 , 76542.50);<br />tr19.imprimirDatos(); <br />Trabajador tr20= new
+        Trabajador("Felipe Feliu Guijarro",42, "Hombre", 234512 , 32098.34);<br />tr20.imprimirDatos();<br />Trabajador
+        tr21= new Trabajador("Roque Gonzalez Gimeno",43, "Hombre", 381926 , 23954);<br />tr21.imprimirDatos();
+        <br />Trabajador tr22= new Trabajador("Azahara Quintana Cervantes",34, "Mujer", 654987 ,
+        98762.50);<br />tr22.imprimirDatos();<br />Trabajador tr23= new Trabajador("Pedro Angulo S&aacute;nchez", 26,
+        "Hombre", 543786 , 56432);<br />tr23.imprimirDatos();<br />Trabajador tr24= new Trabajador("Jose Ram&oacute;n
+        Zamora Carnero", 31, "Hombre", 765823 , 76542);<br />tr24.imprimirDatos();<br />Trabajador tr25= new
+        Trabajador("Juliana Robles Sans", 29, "Mujer", 654786 , 30000);<br />tr25.imprimirDatos();<br />Trabajador tr26=
+        new Trabajador("Olalla Ferrera Toro", 27, "Mujer", 103453 , 28500);<br />tr26.imprimirDatos();<br />Trabajador
+        tr27= new Trabajador("Saturnino Gordillo Pascual", 30, "Hombre", 872312 ,
+        26729);<br />tr27.imprimirDatos();<br />Trabajador tr28= new Trabajador("Clementina Cerro Boada", 28, "Mujer",
+        898012 , 32034);<br />tr28.imprimirDatos();<br />Trabajador tr29= new Trabajador("Ester Alonso Rosales", 38,
+        "Mujer", 187908 , 26098.86);<br />tr29.imprimirDatos();<br />Trabajador tr30= new Trabajador("Roberto
+        Echevarr&iacute;a Mascar&oacute;", 32, "Hombre", 650999 , 45000);<br />tr30.imprimirDatos();<br />Trabajador
+        tr31= new Trabajador("Augusto Cabello Valls", 26, "Hombre", 234789 ,
+        320973);<br />tr31.imprimirDatos();<br />Trabajador tr32= new Trabajador("Armida Luque Luj&aacute;n", 28,
+        "Mujer", 239674 , 18907.32);<br />tr32.imprimirDatos();<br />Trabajador tr33= new Trabajador("Calista Benita
+        Herrero Araujo", 40, "Mujer", 473982 , 92876.50);<br />tr33.imprimirDatos();<br />Trabajador tr34= new
+        Trabajador("Estela Arribas Montero", 31, "Mujer", 234122 , 80956.76);<br />tr34.imprimirDatos();<br />Trabajador
+        tr35= new Trabajador("Efra&iacute;n Villalba Canales", 47, "Hombre", 567498 ,
+        60987.09);<br />tr35.imprimirDatos();<br />Trabajador tr36= new Trabajador("Sebastian Vallejo Valle", 30,
+        "Hombre", 801234 , 76453);<br />tr36.imprimirDatos();<br />Trabajador tr37= new Trabajador("Raquel Luz Soria",
+        38, "Hombre", 24765 , 98765);<br />tr37.imprimirDatos();<br />Trabajador tr38= new Trabajador("Bernardino
+        Marcelino Tenorio Oliver", 29, "Hombre", 765987 , 87546.04);<br />tr38.imprimirDatos();<br />Trabajador tr39=
+        new Trabajador("Florentino Llanos S&aacute;ez", 30, "Hombre", 345677 ,
+        65234.98);<br />tr39.imprimirDatos();<br />Trabajador tr40= new Trabajador("Segismundo Puente Mascar&oacute;",
+        32, "Hombre", 761203 , 9873);<br />tr40.imprimirDatos();<br />Trabajador tr41= new Trabajador("Cristian Domingo
+        Pedraza", 34, "Hombre", 125683 , 19876);<br />tr41.imprimirDatos();<br />Trabajador tr42= new Trabajador("Adora
+        Bonilla Molina", 38, "Mujer", 325643 , 24500);<br />tr42.imprimirDatos();<br />Trabajador tr43= new
+        Trabajador("Fabiola Losada Llabr&eacute;s", 28, "Mujer", 564890 ,
+        20000);<br />tr43.imprimirDatos();<br />Trabajador tr44= new Trabajador("Nacho Carretero Barrag&aacute;n", 39,
+        "Hombre", 654327 , 80000);<br />tr44.imprimirDatos();<br />Trabajador tr45= new Trabajador("Anunciaci&oacute;n
+        Perales Clemente", 29, "Hombre", 189765 , 50234.098);<br />tr45.imprimirDatos();<br />Trabajador tr46= new
+        Trabajador("Esmeralda Garz&oacute;n Torrijos", 39, "Mujer", 654786 ,
+        76239);<br />tr46.imprimirDatos();<br />Trabajador tr47= new Trabajador("Danilo Navarro Perea", 29, "Hombre",
+        655782 , 30239);<br />tr47.imprimirDatos();<br />Trabajador tr48= new Trabajador("Apolonia Marta Aramburu
+        Vicens", 30, "Mujer", 765234 , 87623);<br />tr48.imprimirDatos();<br />Trabajador tr49= new Trabajador("Carla
+        Eva Mar&iacute;a Bilbao Parejo", 31, "Mujer", 876234 , 67563.50);<br />tr49.imprimirDatos();<br />Trabajador
+        tr50= new Trabajador("Jose Miguel Ibarra Lobato", 34, "Hombre", 234123 ,
+        56098.34);<br />tr50.imprimirDatos();<br />}<br />}</p>
+        <hr>
+</body>
+
+</html>
